@@ -5,7 +5,7 @@ little game of russian roulette.
 
 ```sh
 git clone 'https://github.com/linnnus/roulette.git'
-cd roulette
-chmod +x roulette.sh
+cd roulette/
+chmod +x ./roulette.sh
 ./roulette.sh
 ```
